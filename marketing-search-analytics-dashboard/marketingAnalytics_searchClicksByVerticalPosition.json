@@ -1,0 +1,26 @@
+{
+  "$id": "marketingAnalytics_searchClicksByVerticalPosition",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Search & Clicks by Vertical Position",
+  "description": "Answers Searches and Answers Clicks by Result Vertical Position",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES",
+      "yext/ANSWERS_CLICKS"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_RESULT_VERTICAL_POSITION"
+    ],
+    "filters": [
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "table": {}
+  }
+}
